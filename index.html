@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>spotify-clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon"
+        href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJQAAACUCAMAAABC4vDmAAAAqFBMVEUe12D///8AAAAe2mEf3mMA1E8f4mUA1VQU1lwg5Wb6/vsdzlwN1lr3/fkcyloZs1Dg+OYauFIYq0wMVSaz7sIbxFcHNBcSgDkIOhoGKxOW6K0bvlUWnUYA00Yw2WkQdTRr4Inp+u4XpEkVlUMPbTEOYywUjj9y4JAEHg0CDga/8MsNXCmC5Z5B23IJQx4FIg8DFwrK89Wk67iO56Ze3oHV9d4LTSJO3Ho5FGpJAAAI7klEQVR4nNWcaXuiPBSG44RFC4IgCAiuCNbaim1d/v8/exMXVBLCIlje50OvmbHEew7JWbKBViXqXlRNa+DJ53vfP7/L5XS3OyLtdtPl8vfnu/dXUF2EM5VHI16UZbkdC/1F5EcjeYrQStutJNT3526McECqENp49/nx9iqonrEb8cg46URnIbPxo51R4l0WhXozpoBnWIiwGA+mRlF7FYJ62y9HYqaFCIuJo+W+EFcRKGMqikWJzhLFqVEHVNcAfGEj3ZsLGLlHY14o4/gM0gmLP+a1Vj6oj/GzSGes8UdlULNl8d6dgiUuZ5VAdYdFXECWZH6Y3bUyofa7kiMuTeJu/yTU25AVS8pJFocZXosNNZvyVSNh8dNZeajvduVmOktuf5eF+qlq0JFqiz+loN6Wtby6q/hlesdKhXqbVjzqkhKnqVRpULNxTd3pJnk8KwY1+6qdCVF9pVDRoWbgBUyICtCpqFAveHcXKvobpEF1X2OnExWgRUIKVPf4MiZEdaRQUaBeyYSp8kB91uyfkhI/s6GGtfpxmvhhFtT3y5kQVTI6J6B649picLra4x4TavfSTn6VvGNBDV/cya8Sh+lQ+z+xE5a8T4X6iw51VnucBvVXLw/r4QXeQe3/DglrT4WqusArJnFHg/rI7zZhLI7j4j8/ScV/kFDdY3YvRwyC0BGgZLqaquvz+dzz0A9dV1XXVAAUBAFBloRq3/KFGMpgvTxkEvxdpu5P1hvbdpzofbv6F2u12kaRM7Dt/iL0NOWEX9xyokFAyWmGglwHnmgG//LKDixPN0FH4IpAteUk1A/VUPi/64Z9O8rNc5MzOFi6BAp0trhABek9CgpADder7K9nabDwVSDk62hxrwKpQw+ai8GTRGdt7b6ngDwGuw7ACxQZYGBYBVCsTYgMlsV1DTZnqD1hKMGqlAlpZS+0LHvx+zuoZTI9gFrVTCc5lsaxRqS8vEGR+Sac1AKFOtjBY5jrkoOeoAzi7Ul2TVBIK8tN7V28EUN9EYZS6mNCigIzxVrtryvUbJT8DJq1QiEFKt13jWYXKIo3V97rplqtTRrWyasDPGdHCXvr7FYjxxkgOc57SR87UciR2Mbze4Be63E+HWS13QSWP9dc01QUSVKU80/TNLW5by0O0bYIoDMXCCg8/kBKdif0Ew3Ya8vHkb9zypkek7prvsehTyVtHqL8JieWT7xBHGoQ1CetsILK4fboYDJHORyXK0c60QHJ1PLFcjfZpPx5gqJndxBaJ191mMylTs4w/8gmCKZnrTNGzKGTeBBnVaDVJRzCRZzkqpoplc5vT+kzylYnLIutiIdGXQTFKBgqKAdQG0LHDNMHM/H+UKcCrd/6a3WIDOY7dCiV6FS/CIrmperg6rgTWpZPWKo9bYE8pVVVXIpHmIvsUygpBr3xi5iwuI6e6F0Lwn2CcQ/sixXrVzcp3IvjCH+a+jxQ7x3r1iSfEfcg/yQn8jxQcjUdeeygvxlE55G+enc2h2AS+jqqkgGX7dFgR4398kql5KH8N2BWxnFDGEgNF/2Nw3A60eCwnnguFDJ8Pwe88wO2RsuNRQNkTkohHknzggK5TBT4qgJZtQvH6dYkdDvUXxGHgBr57okUP8gbXu9k9y1VYLxLmP6h/AmmLCjOtLbFgWIdPDe72COhpmDHcFOcln9Sg65t35I6BaNneweIouGmijJ1xzNhkemX9hdg+E6hquIvWqhFzMV057DC6mHrK7mxWFDQrLSkGaDe9XQiBKD7zMijaUGtqopJqrz4iyaADMCExsyOHpDNvtuHYIGKLJwon2W6qu6HCxwO83BZUuZIHDNdgvvY3mDhqa4iwbjIuk2no3/CFYweZhUKyNeTxd6jkEtgOk/1OgO7CUIXBwZmenKi60DNyohLa8DsWch5ssOMi13VxtckLn+4QFmCovnJYvZeE2ZbKMxkBmSOFVfTHkM1DKcvUg2msRpEAbm+9TQoSHpKTKAkwTeh1CVXkleaCyVOa4q3GyTr4gcoo0A6XE4cdMmJZodlKZQOFywcSgiZy0/0rg3TUvvXlFiC9FjxhSwHikqsFxWjkPNuE86RxPhNXIyWKNsvtZ8gdLDOhV920cdJcd8i5g8eoKaFJjgwCgSSgqLd3A8ni2DdR1oHEyv0dNdUJPbaI+SkBQqPUd9lRj/xlz0VdN+g0BEU1bMW603K9Mm/CFV9oW4yfC3kTFV3M3Lj01RQ6qTZrSkgufPJJucU6/YQahJIActR258mzVKmF6/i4NwKihY1AxS/O8WLK6zz9CJ9IjZm0stmeo7llpmavEzEsjrVc0tsh9AsnJZfpqyZG7koyWch9VVQbMn9MrlPXQa5SCqzzp4wlw9z5OUx1GUZJGX5/wz1NBNS5Gfn5VddF4woS2s3qDSnhPUeOUh5BoLt5y3c46U1chEyVnLZ9n2wOQSWr7unvSPxxhvJ1D1rvbHTAQc6OzG/6LYISVmujaHMm8vcTPy5pgDqLhu8NafD4cWiIM3HBmYOY90t1zLGH2f2o9W7HfjmxTKsJs+/oIR9+kunTiY+6H5hm9wCcPdFnKtqeTeGXJ4QzDltQcaRshq53wJA2Sxx/yXFF2jwI/M+0cO8rIYeNkvUsW+RE9ww4eXCDKjHbSVF9r7lFzKXZxeBSmzAmdWUFAtgfofls3t6+zjLs6mrAiFrXceio7AtldzUxdj+9rSEa3KuZxiK2P7G3ij4nCA0J/ZgQVkbehBPbhSstdTCmy2zElHalsp6BmAB0TafNnObbmv/Zxu/sdr0Dc2N3PrdzE3yzTxO0MiDF808otLMwzyNPPbUzANizTxK18xDh808nvmqA78nJjCjAPxvjvw283B0M4+RN/PAPRqDDbyaoJmXOLQaed1Fq5kXgzTzChV82UyVd/KclX0zz//xWp5WMy8wajXyqiesBl6KhdXA68OQZkb7uYvW2sYs73cVu5JObtiVdFhv+8+Sl/d913Z534mrcdccntUzjvhCyBwmkvnR8RUXQl6U8+pMZtitHAq9x97+ZzkWZeIOTXzRqDhe/uzLXzL6H5dkxBkNxqqJAAAAAElFTkSuQmCC">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <div class="sidebar">
+        <div class="sidebar-nav">
+            <div class="logo">
+                <a href=""><img src="images/logo (1).png" alt="spotify"></a>
+            </div>
+
+
+            <ul>
+                <li><a href="">
+                        <span><i class="fa-solid fa-house-circle-exclamation"></i></span>
+                        <span>Home</span>
+                    </a></li>
+
+                <li><a href="">
+                        <span><i class="fa-solid fa-magnifying-glass-location"></i></span>
+                        <span>Search</span>
+                    </a></li>
+            </ul>
+
+        </div>
+
+        <div class="sidebar-nav box2">
+
+
+            <ul>
+                <li><a href="">
+                        <span><i class="fa-solid fa-book"></i></span>
+                        <span class="libary">Your Libary</span>
+                    </a></li>
+
+                <li>
+                    <div class="sidebar-scroll">
+                        <div class="create-playlist">
+                            <h4>Create your first playlist</h4>
+                            <p>It's easy, we'll help you</p>
+                            <button>Create playlist</button>
+                        </div>
+
+                        <div class="create-playlist">
+                            <h4>Create your first playlist</h4>
+                            <p>It's easy, we'll help you</p>
+                            <button>Create playlist</button>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+            <div class="privacy">
+                <ul>
+                    <li>
+                        <a href="">Legal</a>
+                        <a href="">Safety & Privacy</a>
+                        <a href="">PrivacyPolicy</a>
+                    </li>
+                    <li>
+                        <a href="">Cookies</a>
+                        <a href="">About Ads</a>
+                        <a href="">Accessibility</a>
+                    </li>
+                    <li>
+                        <a href="">Cookies</a>
+
+                    </li>
+                </ul>
+            </div>
+
+            <div class="eng-btn">
+                <button>English</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- main section start -->
+
+    <div class="main-section">
+        <div class="top-nav">
+            <div class="prve-btn">
+                <button><i class="fa-solid fa-chevron-left"></i></button>
+                <button><i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+            <div class="login-btn">
+                <button class="sign-up">sign up</button>
+                <button class="login">login</button>
+
+
+            </div>
+        </div>
+
+        <div class="spotify-playlist">
+            <h2>Popular Albums</h2>
+            <div class="card">
+                <div class="item">
+                    <img src="/images/akhilrendhu.jpeg" alt="akhilrendhu">
+                    <div class="play-btn">
+                        <span><i class="fa-solid fa-play"></i></span>
+
+                    </div>
+                    <h4>AKHILRENDU</h4>
+                    <p>Manan Bhardwaj,vishal misra jaani</p>
+                </div>
+            </div>
+        </div>
+
+<div class="spotify-playlist">
+   
+    <div class="card">
+        <div class="item">
+            <img src="/images/arijitsingh.jpeg" alt="arijitsingh">
+            <div class="play-btn">
+                <span><i class="fa-solid fa-play"></i></span>
+
+            </div>
+            <h4>ARIJITSINGH</h4>
+            <p>Manan Bhardwaj,vishal misra jaani</p>
+        </div>
+    </div>
+</div>
+
+
+<div class="spotify-playlist">
+   
+    <div class="card">
+        <div class="item">
+            <img src="/images/babbumaan.jpeg" alt="babbumaan">
+            <div class="play-btn">
+                <span><i class="fa-solid fa-play"></i></span>
+
+            </div>
+            <h4>BABBUMAAN</h4>
+            <p>Manan Bhardwaj,vishal misra jaani</p>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="spotify-playlist">
+   
+    <div class="card">
+        <div class="item">
+            <img src="/images/card4img.jpeg" alt="">
+            <div class="play-btn">
+                <span><i class="fa-solid fa-play"></i></span>
+
+            </div>
+            <h4>PUNJABI SONGS</h4>
+            <p>Manan Bhardwaj,vishal misra jaani</p>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="spotify-playlist">
+   
+    <div class="card">
+        <div class="item">
+            <img src="/images/card5img.jpeg" alt="">
+            <div class="play-btn">
+                <span><i class="fa-solid fa-play"></i></span>
+
+            </div>
+            <h4>OLD IS GOLD SONGS</h4>
+            <p>Manan Bhardwaj,vishal misra jaani</p>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="spotify-playlist">
+   
+    <div class="card">
+        <div class="item">
+            <img src="/images/card3img.jpeg" alt="">
+            <div class="play-btn">
+                <span><i class="fa-solid fa-play"></i></span>
+
+            </div>
+            <h4>MIXED SONGS</h4>
+            <p>Manan Bhardwaj,vishal misra jaani</p>
+        </div>
+    </div>
+</div>
+
+
+<div class="spotify-playlist">
+   
+    <div class="card">
+        <div class="item">
+            <img src="/images/card4img.jpeg" alt="">
+            <div class="play-btn">
+                <span><i class="fa-solid fa-play"></i></span>
+
+            </div>
+            <h4>PUNJABI SONGS</h4>
+            <p>Manan Bhardwaj,vishal misra jaani</p>
+        </div>
+    </div>
+</div>
+
+
+<div class="spotify-playlist">
+   
+    <div class="card">
+        <div class="item">
+            <img src="/images/card5img.jpeg" alt="">
+            <div class="play-btn">
+                <span><i class="fa-solid fa-play"></i></span>
+
+            </div>
+            <h4>OLD IS GOLD SONGS</h4>
+            <p>Manan Bhardwaj,vishal misra jaani</p>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="spotify-playlist">
+   
+    <div class="card">
+        <div class="item">
+            <img src="/images/card3img.jpeg" alt="">
+            <div class="play-btn">
+                <span><i class="fa-solid fa-play"></i></span>
+
+            </div>
+            <h4>MIXED SONGS</h4>
+            <p>Manan Bhardwaj,vishal misra jaani</p>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="spotify-playlist">
+   
+    <div class="card">
+        <div class="item">
+            <img src="/images/card4img.jpeg" alt="">
+            <div class="play-btn">
+                <span><i class="fa-solid fa-play"></i></span>
+
+            </div>
+            <h4>PUNJABI SONGS</h4>
+            <p>Manan Bhardwaj,vishal misra jaani</p>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="spotify-playlist">
+   
+    <div class="card">
+        <div class="item">
+            <img src="/images/card5img.jpeg" alt="">
+            <div class="play-btn">
+                <span><i class="fa-solid fa-play"></i></span>
+
+            </div>
+            <h4>OLD IS GOLD SONGS</h4>
+            <p>Manan Bhardwaj,vishal misra jaani</p>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="spotify-playlist">
+   
+    <div class="card">
+        <div class="item">
+            <img src="/images/card3img.jpeg" alt="">
+            <div class="play-btn">
+                <span><i class="fa-solid fa-play"></i></span>
+
+            </div>
+            <h4>MIXED SONGS</h4>
+            <p>Manan Bhardwaj,vishal misra jaani</p>
+        </div>
+    </div>
+</div>
+
+
+
+    </div>
+
+</body>
+
+</html>
